@@ -6,6 +6,7 @@
 #include "heap.h"
 #include "queue.h"
 #include "predict.h"
+#include "json.h"
 
 /* Find first free bed of required type */
 Bed* find_free_bed(Bed beds[], int count, int type) {
@@ -87,6 +88,7 @@ int main() {
     } else {
         printf("\nNo discharge prediction available.\n");
     }
+    export_beds_to_json(beds, bed_count, "data/beds.json");
 
     return 0;
 }
