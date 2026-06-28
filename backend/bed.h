@@ -11,10 +11,17 @@ typedef enum {
     VENTILATOR
 } BedType;
 
+typedef enum {
+    BED_FREE,
+    BED_OCCUPIED,
+    BED_DISCHARGE_APPROVED
+} BedState;
+
 typedef struct {
     int bed_id;
     BedType type;
-    int occupied;        // 0 = free, 1 = occupied
+    BedState state;      // Replaces occupied flag
+    int current_patient_id; // Added for tracking
     long admit_time;
 } Bed;
 

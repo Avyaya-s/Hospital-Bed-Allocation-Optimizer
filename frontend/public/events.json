@@ -1,0 +1,10 @@
+{
+  "logs": [
+    { "timestamp": "2026-02-09 12:21:49", "action": "ADMIT", "message": "Patient 100 (Sev 5) allocated Bed 41" },
+    { "timestamp": "2026-02-09 12:23:26", "action": "ADMIT", "message": "Patient 200 (Sev 5) allocated Bed 42" },
+    { "timestamp": "2026-02-09 12:24:07", "action": "ENQUEUE", "message": "Patient 300 (Sev 5) added to waiting queue" },
+    { "timestamp": "2026-02-09 12:25:25", "action": "APPROVE_DISCHARGE", "message": "Bed 41 (Patient 100) marked for discharge" },
+    { "timestamp": "2026-02-09 12:26:20", "action": "DISCHARGE", "message": "Patient 100 discharged from Bed 41" },
+    { "timestamp": "2026-02-09 12:26:20", "action": "REALLOCATE", "message": "Patient 300 (Sev 5) allocated Bed 41 from waiting queue" }
+  ]
+}

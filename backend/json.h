@@ -2,7 +2,10 @@
 #define JSON_H
 
 #include "bed.h"
+#include "queue.h"
+#include "predict.h"
+#include "heap.h"
 
-void export_beds_to_json(Bed beds[], int count, const char *filename);
+void export_full_status_to_json(Bed beds[], int count, Queue *q, MinHeap *h, const char *filename);
 
 #endif

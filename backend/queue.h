@@ -14,5 +14,6 @@ void queue_init(Queue *q);
 int queue_empty(Queue *q);
 void enqueue(Queue *q, Patient p);
 Patient dequeue(Queue *q);
+Patient queue_remove_at(Queue *q, int phys_idx);
 
 #endif
